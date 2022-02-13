@@ -14,7 +14,7 @@
 
 /* font size */
     --fs-800: 2rem;
-    --fs-700: 1.75rem;
+    --fs-700: 1.3755rem;
     --fs-600: 1.125rem;
     --fs-500: 1rem;
     --fs-400: .938rem;
@@ -64,6 +64,8 @@ body {
     background-color: hsl(var(--clr-light));
     line-height: 1.5;
     min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
 }
 
 img,
@@ -155,18 +157,40 @@ select {
 /* -------------------- */
 
 .card {
-    width: 250px;
-    height: 450px;
-    padding: 1rem;
-    border-radius: 5%;
-    box-shadow: 1rem 1rem hsl( var(--clr-dark) / .01 );
+    width: 320px;
+    /* height: 497px; */
+    padding: 0 16px;
+    border-radius: 20px;
+    box-shadow: 1px 25px 25px hsl( var(--clr-dark) / .05 );
 }
 
-.card > img {
-    border-radius: 5%;
+.card-img {
+    border-radius: 20px;
+    margin-top: 16px;
+}
+
+.card-info {
+    margin: 24px 0 40px 0;
 }
 
 .card-title {
     font-weight: 700;
+    margin-bottom: 16px;
 }
 
+.card-info > p {
+    margin-inline: 16px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: fixed;
+    bottom: 1rem;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
