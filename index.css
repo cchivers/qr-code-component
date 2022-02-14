@@ -62,7 +62,6 @@ body {
     font-family: var(--ff--sans-normal);
     font-size: var(--fs-400);
     background-color: hsl(var(--clr-light));
-    line-height: 1.5;
     min-height: 100vh;
     align-items: center;
     flex-direction: column;
@@ -176,10 +175,12 @@ select {
 .card-title {
     font-weight: 700;
     margin-bottom: 16px;
+    line-height: 28px;
 }
 
 .card-info > p {
     margin-inline: 16px;
+    line-height: 19px;
 }
 
 .attribution { 
